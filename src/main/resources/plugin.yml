@@ -1,0 +1,11 @@
+name: NetherRoofProtect
+main: com.comoj.bustedearlobes.netherroofprotect.NetherRoofProtect
+version: 2.0-SNAPSHOT
+description: This plugin prevents users from going above the nether ceiling
+author: BustedEarLobes
+website: http://bustedearlobes.comoj.com/
+
+permissions:
+  netherroofprotect.allow:
+    description: Allows the player to be on top of the nether bedrock layer
+    default: op

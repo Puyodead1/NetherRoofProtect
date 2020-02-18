@@ -1,0 +1,41 @@
+# Config file for NetherRoofProtect plugin
+# Delete this file to generate a new one
+
+# This message is displayed when a user was caught above the nether roof
+# Codes:
+#	%X_CORD% - X coordinate of player before teleported back to spawn
+#		(Same for %Y_CORD% and %Z_CORD%)
+#	%PLAYER_NAME% - The name of the player who got teleported
+teleportMessage: |
+  Sorry %PLAYER_NAME%,
+  You have attempted to move on top of the Nether.
+  In order to prevent this, we teleported you back to spawn.
+  We apologize if this was a mistake.
+  Your last coords were:
+  X: %X_CORD%, Y: %Y_CORD%, Z: %Z_CORD%
+
+
+# If you would like to enter a custom command when the player is above the hight limit,
+# set this to true and edit overrideCommand to the command you would like to run
+overrideTeleport: false
+
+# If overrideTeleport is true, this command will be ran
+# Remember that this is a console command, so don't add a /
+overrideCommand: 'kill %PLAYER_NAME%'
+
+# The player will spawn in this world's spawn when he goes on top of the nether
+# NOTE: The Nether spawn is not always safe to teleport in! Use world if you want to
+# keep it safe!
+teleportWorldName: world_nether
+
+# The maximum height a player is allowed to be in the nether (127 was original until a boat exploit was found)
+maxNetherHeight: 126
+
+# This is how often (in server ticks) that the plugin checks if any
+# player is on top of the nether. Increasing this may slightly increase
+# performance on high traffic servers (Granted it doesn't cause much lag to begin with). The minimum is 5
+checkDelay: 10
+
+
+
+# Want more configurations? Contact me through bukkit or through bustedearlobes.comoj.com
